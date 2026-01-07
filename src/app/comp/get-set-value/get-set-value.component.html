@@ -1,0 +1,12 @@
+<h2>Setting and Getting Username Using Events</h2>
+<h3>Username is : {{getUserName}}</h3>
+<input type="text" placeholder="Enter Username" value="{{username}}" (input)="getUsername($event)">
+<button class="show" (click)="showUsername()">Get Username</button>
+<button class="set" (click)="setUsername()">Set Defult Username</button>
+<br>
+<hr>
+<h2>Setting and Getting Email Using template reference variable</h2>
+<h3>Email is : {{getEmail}}</h3>
+<input type="email" value="{{email}}" (input)="getEmails(emailfield.value)" placeholder="Enter email" #emailfield>
+<button class="show" (click)="showEmail()">Get Email</button>
+<button class="set" (click)="setDefaultEmail()">Set Defult Email</button>

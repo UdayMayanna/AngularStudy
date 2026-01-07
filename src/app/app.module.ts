@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InterpolationComponent } from './comp/interpolation/interpolation.component';
+import { CustomComponent } from './comp/custom/custom.component';
+import { FunCallComponent } from './comp/fun-call/fun-call.component';
+import { DatatypeComponent } from './comp/datatype/datatype.component';
+import { CounterAppComponent } from './comp/counter-app/counter-app.component';
+import { EventsComponent } from './comp/events/events.component';
+import { GetSetValueComponent } from './comp/get-set-value/get-set-value.component';
+import { IfElseComponent } from './comp/if-else/if-else.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InterpolationComponent,
+    CustomComponent,
+    FunCallComponent,
+    DatatypeComponent,
+    CounterAppComponent,
+    EventsComponent,
+    GetSetValueComponent,
+    IfElseComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

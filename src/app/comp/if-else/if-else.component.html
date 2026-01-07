@@ -1,0 +1,11 @@
+<div *ngIf="display; else hide" style="height: 200px;width: 200px;background-color: blueviolet;">
+  
+</div>
+<ng-template #hide>
+ <div style="height: 200px;width: 200px;background-color: gold;">
+
+ </div>
+</ng-template>
+<button (click)="toggleColor()" style="padding: 10px;background-color: brown;border-radius: 7px;
+border: none;margin-top: 10px;color: #fff;font-size: 18px;font-weight: 600;">Toggle Box Color</button>
+<hr>
