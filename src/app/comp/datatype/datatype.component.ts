@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-datatype',
-  templateUrl: './datatype.component.html',
-  styles: [
-  ]
+    selector: 'app-datatype',
+    templateUrl: './datatype.component.html',
+    styles: [],
+    standalone: false
 })
 export class DatatypeComponent {
   name:string="Uday";  //Property //Will store string only

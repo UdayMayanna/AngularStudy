@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-events',
-  templateUrl: './events.component.html',
-  styles: [`.login-btn{
+    selector: 'app-events',
+    templateUrl: './events.component.html',
+    styles: [`.login-btn{
     padding:10px 20px;
     background:green;
     color:#fff;
@@ -25,7 +25,8 @@ import { Component } from '@angular/core';
     border-bottom:2px solid black;
     border-radius:5px;
   }`
-  ]
+    ],
+    standalone: false
 })
 export class EventsComponent {
 handleClick(event:MouseEvent){

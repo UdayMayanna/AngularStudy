@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-get-set-value',
-  templateUrl: './get-set-value.component.html',
-  styles: [`input{
+    selector: 'app-get-set-value',
+    templateUrl: './get-set-value.component.html',
+    styles: [`input{
     padding:10px 20px;
     margin-right:10px;
     font-size:18px;
@@ -25,7 +25,8 @@ import { Component } from '@angular/core';
   .set{
     background:blueviolet;
   }`
-  ]
+    ],
+    standalone: false
 })
 export class GetSetValueComponent {
 
