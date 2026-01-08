@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     standalone: false
 })
 export class IfElseComponent {
-  display = false;
+  display = true;
   toggleColor(){
     this.display = !this.display;
   }
