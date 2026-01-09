@@ -12,6 +12,8 @@ import { EventsComponent } from './comp/events/events.component';
 import { GetSetValueComponent } from './comp/get-set-value/get-set-value.component';
 import { IfElseComponent } from './comp/if-else/if-else.component';
 import { ElseIfComponent } from './comp/else-if/else-if.component';
+import { SwitchCompComponent } from './comp/switch-comp/switch-comp.component';
+import { ForLoopComponent } from './comp/for-loop/for-loop.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ElseIfComponent } from './comp/else-if/else-if.component';
     EventsComponent,
     GetSetValueComponent,
     IfElseComponent,
-    ElseIfComponent
+    ElseIfComponent,
+    SwitchCompComponent,
+    ForLoopComponent
   ],
   imports: [
     BrowserModule,
