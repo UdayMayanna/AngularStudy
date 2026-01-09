@@ -14,6 +14,8 @@ import { IfElseComponent } from './comp/if-else/if-else.component';
 import { ElseIfComponent } from './comp/else-if/else-if.component';
 import { SwitchCompComponent } from './comp/switch-comp/switch-comp.component';
 import { ForLoopComponent } from './comp/for-loop/for-loop.component';
+import { SimpleSignalComponent } from './comp/simple-signal/simple-signal.component';
+import { ComputedSignalComponent } from './comp/computed-signal/computed-signal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ForLoopComponent } from './comp/for-loop/for-loop.component';
     IfElseComponent,
     ElseIfComponent,
     SwitchCompComponent,
-    ForLoopComponent
+    ForLoopComponent,
+    SimpleSignalComponent,
+    ComputedSignalComponent
   ],
   imports: [
     BrowserModule,
