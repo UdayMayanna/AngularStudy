@@ -11,6 +11,7 @@ import { CounterAppComponent } from './comp/counter-app/counter-app.component';
 import { EventsComponent } from './comp/events/events.component';
 import { GetSetValueComponent } from './comp/get-set-value/get-set-value.component';
 import { IfElseComponent } from './comp/if-else/if-else.component';
+import { ElseIfComponent } from './comp/else-if/else-if.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { IfElseComponent } from './comp/if-else/if-else.component';
     EventsComponent,
     GetSetValueComponent,
     IfElseComponent,
+    ElseIfComponent
   ],
   imports: [
     BrowserModule,

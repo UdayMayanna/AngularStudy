@@ -1,0 +1,30 @@
+<p style="font-size: 22px;">else-if control flow</p>
+<button style="background-color: red;color:
+ #fff;padding: 7px 15px;border: none;margin: 
+ 5px;border-radius: 7px;font-size: 16px;cursor: pointer;" (click)="updateColor(1)">Red</button>
+ <button style="background-color: green;color:
+ #fff;padding: 7px 15px;border: none;margin: 
+ 5px;border-radius: 7px;font-size: 16px;cursor: pointer;" (click)="updateColor(2)">Green</button>
+ <button style="background-color: blue;color:
+ #fff;padding: 7px 15px;border: none;margin: 
+ 5px;border-radius: 7px;font-size: 16px;cursor: pointer;" (click)="updateColor(3)">Blue</button>
+ <button style="background-color: black;color:
+ #fff;padding: 7px 15px;border: none;margin: 
+ 5px;border-radius: 7px;font-size: 16px;cursor: pointer;" (click)="updateColor(4)">Black</button>
+
+ <input style="padding: 7px 15px; margin: 5px;border-radius: 10px;border: none;
+ background-color: rgb(210, 210, 210);font-size: 16px" 
+ placeholder="Enter color number" type="number" (input)="updateColorInput($event)">
+@if(color==1){
+ <p style="color:red;font-size: 28px;font-weight: 700;">Red Color</p>
+}
+@else if (color==2) {
+ <p style="color:Green;font-size: 28px;font-weight: 700;">Green Color</p>
+}
+@else if (color==3) {
+ <p style="color:blue;font-size: 28px;font-weight: 700;">Blue Color</p>
+}
+@else{
+  <p style="color:black;font-size: 28px;font-weight: 700;">Black Color</p>
+}
+  
