@@ -16,6 +16,7 @@ import { SwitchCompComponent } from './comp/switch-comp/switch-comp.component';
 import { ForLoopComponent } from './comp/for-loop/for-loop.component';
 import { SimpleSignalComponent } from './comp/simple-signal/simple-signal.component';
 import { ComputedSignalComponent } from './comp/computed-signal/computed-signal.component';
+import { EffectStudyComponent } from './comp/effect-study/effect-study.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ComputedSignalComponent } from './comp/computed-signal/computed-signal.
     SwitchCompComponent,
     ForLoopComponent,
     SimpleSignalComponent,
-    ComputedSignalComponent
+    ComputedSignalComponent,
+    EffectStudyComponent
   ],
   imports: [
     BrowserModule,
