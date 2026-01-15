@@ -17,6 +17,9 @@ import { ForLoopComponent } from './comp/for-loop/for-loop.component';
 import { SimpleSignalComponent } from './comp/simple-signal/simple-signal.component';
 import { ComputedSignalComponent } from './comp/computed-signal/computed-signal.component';
 import { EffectStudyComponent } from './comp/effect-study/effect-study.component';
+import { ForLoopContextualVarComponent } from './comp/for-loop-contextual-var/for-loop-contextual-var.component';
+import { FormsModule } from '@angular/forms';
+import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +37,14 @@ import { EffectStudyComponent } from './comp/effect-study/effect-study.component
     ForLoopComponent,
     SimpleSignalComponent,
     ComputedSignalComponent,
-    EffectStudyComponent
+    EffectStudyComponent,
+    ForLoopContextualVarComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

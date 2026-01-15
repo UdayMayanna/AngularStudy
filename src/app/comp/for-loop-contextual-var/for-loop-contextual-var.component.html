@@ -1,0 +1,53 @@
+<h2>Students</h2>
+<table>
+    <tr>
+        <td>Sr No</td>
+        <td>Studend Id</td>
+        <td>Studend Name</td>
+        <td>Studend Age</td>
+    </tr>
+    @for (student of students; track $index; let i = $index) {
+    @if($even){
+    @if ($first) {
+    <tr style="background-color: rgb(8, 4, 0);color: #fff;">
+        <td>{{i+1}}</td>
+        <td>{{student.stuId}}</td>
+        <td>{{student.stuName}}</td>
+        <td>{{student.stuAge}}</td>
+    </tr>
+    }
+    @else {
+    <tr>
+        <td>{{i+1}}</td>
+        <td>{{student.stuId}}</td>
+        <td>{{student.stuName}}</td>
+        <td>{{student.stuAge}}</td>
+    </tr>
+    }
+    }@else{
+    @if($last){
+    <tr style="background-color: rgb(240, 9, 9);color: #fff;">
+        <td>{{i+1}}</td>
+        <td>{{student.stuId}}</td>
+        <td>{{student.stuName}}</td>
+        <td>{{student.stuAge}}</td>
+    </tr>
+    }@else {
+    <tr>
+        <td>{{i+1}}</td>
+        <td>{{student.stuId}}</td>
+        <td>{{student.stuName}}</td>
+        <td>{{student.stuAge}}</td>
+    </tr>
+    }
+    }
+    }
+</table>
+<hr>
+<h1>For User arrray</h1>
+@for (user of users; track users) {
+   <h2>Name {{user}}</h2>
+}
+@empty {
+ <h2>No Record Found</h2>
+}
