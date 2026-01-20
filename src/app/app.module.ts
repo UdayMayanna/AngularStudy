@@ -20,6 +20,7 @@ import { EffectStudyComponent } from './comp/effect-study/effect-study.component
 import { ForLoopContextualVarComponent } from './comp/for-loop-contextual-var/for-loop-contextual-var.component';
 import { FormsModule } from '@angular/forms';
 import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
+import { TodoComponent } from './comp/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.c
     ComputedSignalComponent,
     EffectStudyComponent,
     ForLoopContextualVarComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+<div style="text-align: center;margin-top: 50px;">
+    <input type="text" placeholder="Enter Task" [(ngModel)]="task" style="padding: 10px;
+    background-color: #ececec;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    font-size: 22px;"><br>
+    <button (click)="addTask()" style="    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blueviolet;
+    color: #fff;">Add task</button>
+    <table style="margin:50px auto;font-family: 'Courier New', Courier, monospace;">
+        <tr>
+            <th style="width: 100px;text-align: center;">Id</th>
+            <th style="width: 300px;text-align: center;">Task</th>
+            <th style="width: 300px;text-align: center;">Date</th>
+            <th style="width: 300px;text-align: center;">Action</th>
+        </tr>
+
+        @for(tsk of tasks; track tsk.id){
+        <tr>
+            <td style="text-align: center;">{{tsk.id}}</td>
+            <td style="text-align: center;">{{tsk.todo}}</td>
+            <td style="text-align: center;">{{tsk.date}}</td>
+            <td style="text-align: center;">
+                
+    <button (click)="deleteTask(tsk.id)" style="padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: Red;
+    color: #fff;">Delete</button></td>
+        </tr>
+        
+        }
+    </table>
+</div>
