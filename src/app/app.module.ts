@@ -21,6 +21,7 @@ import { ForLoopContextualVarComponent } from './comp/for-loop-contextual-var/fo
 import { FormsModule } from '@angular/forms';
 import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
 import { TodoComponent } from './comp/todo/todo.component';
+import { DynamicStylingComponent } from './comp/dynamic-styling/dynamic-styling.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TodoComponent } from './comp/todo/todo.component';
     EffectStudyComponent,
     ForLoopContextualVarComponent,
     TwoWayBindingComponent,
-    TodoComponent
+    TodoComponent,
+    DynamicStylingComponent
   ],
   imports: [
     BrowserModule,
