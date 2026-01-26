@@ -23,6 +23,9 @@ import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.c
 import { TodoComponent } from './comp/todo/todo.component';
 import { DynamicStylingComponent } from './comp/dynamic-styling/dynamic-styling.component';
 import { DirectivesBasicComponent } from './comp/directives-basic/directives-basic.component';
+import { NgFor, NgSwitch, NgSwitchCase } from '@angular/common';
+import { NgfordirComponent } from './comp/ngfordir/ngfordir.component';
+import { NgswitchdirComponent } from './comp/ngswitchdir/ngswitchdir.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +48,17 @@ import { DirectivesBasicComponent } from './comp/directives-basic/directives-bas
     TwoWayBindingComponent,
     TodoComponent,
     DynamicStylingComponent,
-    DirectivesBasicComponent
+    DirectivesBasicComponent,
+    NgfordirComponent,
+    NgswitchdirComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgFor,
+    NgSwitch,
+    NgSwitchCase
   ],
   providers: [],
   bootstrap: [AppComponent]
