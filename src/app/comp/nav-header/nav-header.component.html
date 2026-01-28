@@ -1,0 +1,24 @@
+<nav>
+    <div>
+        <h1>Logo</h1>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li>
+                <a
+          routerLink="/home"
+          routerLinkActive="active-menu"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Home
+        </a>
+            </li>
+            <li>
+                <a routerLinkActive="active-menu" routerLink="/interpollation">Interpollation</a>
+            </li>
+            <li>
+                <a routerLinkActive="active-menu" routerLink="/twowaybinding">Two-way-binding</a>
+            </li>
+        </ul>
+    </div>
+</nav>

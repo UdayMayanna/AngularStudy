@@ -5,7 +5,8 @@ import { InterpolationComponent } from './comp/interpolation/interpolation.compo
 import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
 
 const routes: Routes = [
-  {path:'', component:TodoComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path:'home', component:TodoComponent},
   {path:'interpollation', component:InterpolationComponent},
   {path:'twowaybinding', component:TwoWayBindingComponent}
 ];
