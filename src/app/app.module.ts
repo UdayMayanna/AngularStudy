@@ -26,6 +26,7 @@ import { DirectivesBasicComponent } from './comp/directives-basic/directives-bas
 import { NgFor, NgSwitch, NgSwitchCase } from '@angular/common';
 import { NgfordirComponent } from './comp/ngfordir/ngfordir.component';
 import { NgswitchdirComponent } from './comp/ngswitchdir/ngswitchdir.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,9 @@ import { NgswitchdirComponent } from './comp/ngswitchdir/ngswitchdir.component';
     FormsModule,
     NgFor,
     NgSwitch,
-    NgSwitchCase
+    NgSwitchCase,
+    RouterLink,
+    RouterOutlet    
   ],
   providers: [],
   bootstrap: [AppComponent]
