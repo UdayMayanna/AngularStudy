@@ -28,6 +28,7 @@ import { NgfordirComponent } from './comp/ngfordir/ngfordir.component';
 import { NgswitchdirComponent } from './comp/ngswitchdir/ngswitchdir.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavHeaderComponent } from './comp/nav-header/nav-header.component';
+import { ProfileComponent } from './comp/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NavHeaderComponent } from './comp/nav-header/nav-header.component';
     DirectivesBasicComponent,
     NgfordirComponent,
     NgswitchdirComponent,
-    NavHeaderComponent
+    NavHeaderComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

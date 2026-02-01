@@ -5,13 +5,9 @@
     <div class="nav-menu">
         <ul>
             <li>
-                <a
-          routerLink="/home"
-          routerLinkActive="active-menu"
-          [routerLinkActiveOptions]="{ exact: true }"
-        >
-          Home
-        </a>
+                <a routerLink="/home" routerLinkActive="active-menu" [routerLinkActiveOptions]="{ exact: true }">
+                    Home
+                </a>
             </li>
             <li>
                 <a routerLinkActive="active-menu" routerLink="/interpollation">Interpollation</a>
@@ -19,6 +15,14 @@
             <li>
                 <a routerLinkActive="active-menu" routerLink="/twowaybinding">Two-way-binding</a>
             </li>
+            <!-- <li>
+                <a routerLinkActive="active-menu" [routerLink]="['profile',{name:'Uday Mayanna'}]">Profile</a>
+            </li>    -->
+            <li>
+                <a routerLinkActive="active-menu" routerLink="/profile">Profile</a>
+            </li>
         </ul>
+
+        <!-- <button style="padding: 7px 10px;" (click)="goToProfile()">Profile</button> -->
     </div>
 </nav>
