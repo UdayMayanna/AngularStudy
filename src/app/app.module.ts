@@ -29,6 +29,8 @@ import { NgswitchdirComponent } from './comp/ngswitchdir/ngswitchdir.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavHeaderComponent } from './comp/nav-header/nav-header.component';
 import { ProfileComponent } from './comp/profile/profile.component';
+import { DynamicRoutingComponent } from './comp/dynamic-routing/dynamic-routing.component';
+import { SingleUserComponent } from './comp/single-user/single-user.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { ProfileComponent } from './comp/profile/profile.component';
     NgfordirComponent,
     NgswitchdirComponent,
     NavHeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    DynamicRoutingComponent,
   ],
   imports: [
     BrowserModule,

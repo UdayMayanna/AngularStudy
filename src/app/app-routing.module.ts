@@ -5,12 +5,16 @@ import { InterpolationComponent } from './comp/interpolation/interpolation.compo
 import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
 import { PageNotFoundComponent } from './comp/page-not-found/page-not-found.component';
 import { ProfileComponent } from './comp/profile/profile.component';
+import { SingleUserComponent } from './comp/single-user/single-user.component';
+import { DynamicRoutingComponent } from './comp/dynamic-routing/dynamic-routing.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
   {path:'home', component:TodoComponent},
   {path:'interpollation', component:InterpolationComponent},
   {path:'twowaybinding', component:TwoWayBindingComponent},
+  {path:'users',component:DynamicRoutingComponent},
+  {path:'user/:id/:name',component:SingleUserComponent},
   {path:'profile',component:ProfileComponent,data:{name:"Uday mayanna"}},
   {path:'**',component:PageNotFoundComponent}
   //Also called as wild card route
