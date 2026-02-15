@@ -18,7 +18,7 @@ import { SimpleSignalComponent } from './comp/simple-signal/simple-signal.compon
 import { ComputedSignalComponent } from './comp/computed-signal/computed-signal.component';
 import { EffectStudyComponent } from './comp/effect-study/effect-study.component';
 import { ForLoopContextualVarComponent } from './comp/for-loop-contextual-var/for-loop-contextual-var.component';
-import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TwoWayBindingComponent } from './comp/two-way-binding/two-way-binding.component';
 import { TodoComponent } from './comp/todo/todo.component';
 import { DynamicStylingComponent } from './comp/dynamic-styling/dynamic-styling.component';
@@ -32,6 +32,7 @@ import { ProfileComponent } from './comp/profile/profile.component';
 import { DynamicRoutingComponent } from './comp/dynamic-routing/dynamic-routing.component';
 import { SingleUserComponent } from './comp/single-user/single-user.component';
 import { ReactiveFromsComponent } from './comp/reactive-froms/reactive-froms.component';
+import { FormGroupingRecFormComponent } from './comp/form-grouping-rec-form/form-grouping-rec-form.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ReactiveFromsComponent } from './comp/reactive-froms/reactive-froms.com
     NavHeaderComponent,
     ProfileComponent,
     DynamicRoutingComponent,
-    ReactiveFromsComponent
+    ReactiveFromsComponent,
+    FormGroupingRecFormComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ import { ReactiveFromsComponent } from './comp/reactive-froms/reactive-froms.com
     NgSwitchCase,
     RouterLink,
     RouterOutlet,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
     ],
   providers: [],
   bootstrap: [AppComponent]

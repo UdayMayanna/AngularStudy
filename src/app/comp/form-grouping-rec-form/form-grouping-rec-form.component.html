@@ -1,0 +1,15 @@
+<form [formGroup]="profileform">
+    <input type="text" placeholder="Enter name" formControlName="name">
+    <span *ngIf="name?.hasError('required')">Name is required</span>
+    <span *ngIf="name?.invalid && (name?.dirty || name?.touched)">Name is required</span>
+
+    <br>
+    <br>
+    <input type="text" placeholder="Enter email" formControlName="email">
+    <br>
+    <br>
+    <input type="text" placeholder="Enter password" formControlName="pass">
+    <br>
+    <br>
+    <button>Submit</button>
+</form>
