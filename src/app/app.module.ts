@@ -33,6 +33,7 @@ import { DynamicRoutingComponent } from './comp/dynamic-routing/dynamic-routing.
 import { SingleUserComponent } from './comp/single-user/single-user.component';
 import { ReactiveFromsComponent } from './comp/reactive-froms/reactive-froms.component';
 import { FormGroupingRecFormComponent } from './comp/form-grouping-rec-form/form-grouping-rec-form.component';
+import { TemplateDrivenFormComponent } from './comp/template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { FormGroupingRecFormComponent } from './comp/form-grouping-rec-form/form
     ProfileComponent,
     DynamicRoutingComponent,
     ReactiveFromsComponent,
-    FormGroupingRecFormComponent
+    FormGroupingRecFormComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

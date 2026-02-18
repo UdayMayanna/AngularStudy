@@ -1,0 +1,21 @@
+<form (ngSubmit)="submitForm()">
+
+  <input 
+    type="email"
+    name="email"
+    [(ngModel)]="user.email"
+    placeholder="Enter Email">
+
+  <br><br>
+
+  <input 
+    type="password"
+    name="password"
+    [(ngModel)]="user.password"
+    placeholder="Enter Password">
+
+  <br><br>
+
+  <button type="submit">Submit</button>
+
+</form>
