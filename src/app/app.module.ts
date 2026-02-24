@@ -36,6 +36,8 @@ import { FormGroupingRecFormComponent } from './comp/form-grouping-rec-form/form
 import { TemplateDrivenFormComponent } from './comp/template-driven-form/template-driven-form.component';
 import { ChildCompComponent } from './comp/child-comp/child-comp.component';
 import { ChildComp2Component } from './comp/child-comp2/child-comp2.component';
+import { AngularPipesComponent } from './comp/angular-pipes/angular-pipes.component';
+import { SquarePipe } from './pipes/square.pipe';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,8 @@ import { ChildComp2Component } from './comp/child-comp2/child-comp2.component';
     FormGroupingRecFormComponent,
     TemplateDrivenFormComponent,
     ChildCompComponent,
-    ChildComp2Component
+    ChildComp2Component,
+    AngularPipesComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +83,7 @@ import { ChildComp2Component } from './comp/child-comp2/child-comp2.component';
     RouterLink,
     RouterOutlet,
     ReactiveFormsModule,
-
+    SquarePipe
     ],
   providers: [],
   bootstrap: [AppComponent]
