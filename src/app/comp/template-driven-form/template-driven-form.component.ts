@@ -6,7 +6,10 @@ import { User } from 'src/app/models/user';
   selector: 'app-template-driven-form',
   standalone: false,
   templateUrl: './template-driven-form.component.html',
-  styles: ``
+  styles: `p{
+    color:red;
+    margin:0;
+  }`
 })
 export class TemplateDrivenFormComponent {
 

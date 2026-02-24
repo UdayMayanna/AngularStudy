@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app 12';
+
+  //code For Child Comp2 (To import data from Child to parent)
+
+  handleUser(user:string){
+    this.title=user;
+  }
 }

@@ -1,21 +1,42 @@
-<form (ngSubmit)="submitForm()">
+<form #loginForm="ngForm" (ngSubmit)="submitForm()">
 
   <input 
     type="email"
+    #email="ngModel"
     name="email"
     [(ngModel)]="user.email"
-    placeholder="Enter Email">
-
+    placeholder="Enter Email"
+    required
+    email
+    >
+  <p *ngIf="email.invalid && email.touched">Please Enter a valid email</p>
   <br><br>
 
   <input 
     type="password"
     name="password"
+    #pass="ngModel"
     [(ngModel)]="user.password"
-    placeholder="Enter Password">
-
+    placeholder="Enter Password"
+    required
+    minlength="5"
+    maxlength="5"
+    >
+  <p *ngIf="pass.invalid && pass.touched">Please enter valid Passowrd</p>
   <br><br>
 
-  <button type="submit">Submit</button>
+  <input 
+    type="text"
+    name="address"
+    #address="ngModel"
+    ngModel
+    placeholder="Enter Address"
+    required
+    pattern="[a-zA-Z0-9\s]+"
+    >
+  <p *ngIf="address.invalid && address.touched">Please enter valid Address</p>
+  <br><br>
+
+  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
 
 </form>

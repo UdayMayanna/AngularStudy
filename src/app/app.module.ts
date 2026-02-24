@@ -34,6 +34,8 @@ import { SingleUserComponent } from './comp/single-user/single-user.component';
 import { ReactiveFromsComponent } from './comp/reactive-froms/reactive-froms.component';
 import { FormGroupingRecFormComponent } from './comp/form-grouping-rec-form/form-grouping-rec-form.component';
 import { TemplateDrivenFormComponent } from './comp/template-driven-form/template-driven-form.component';
+import { ChildCompComponent } from './comp/child-comp/child-comp.component';
+import { ChildComp2Component } from './comp/child-comp2/child-comp2.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { TemplateDrivenFormComponent } from './comp/template-driven-form/templat
     DynamicRoutingComponent,
     ReactiveFromsComponent,
     FormGroupingRecFormComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    ChildCompComponent,
+    ChildComp2Component
   ],
   imports: [
     BrowserModule,
